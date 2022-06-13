@@ -4,7 +4,7 @@ import Counter from './components/Counter/Counter';
 function App() {
   return (
     <div className="App">
-      {<Counter valorInicial = {1} incremento = {1}/>}
+      {<Counter valorInicial = {100} incremento = {1500}/>}
     </div>
   );
 }

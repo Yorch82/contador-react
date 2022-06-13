@@ -1,10 +1,9 @@
 import React, {useState} from 'react'
 
 
-const Counter = (props) => { 
-    console.log(props)
-    const [counter, setCounter] = useState (props.valorInicial)
-    const [contador, setContador] = useState ("Mi contador")
+const Counter = (props) => {
+   
+    const [counter, setCounter] = useState (props.valorInicial)   
 
     const incrementar = () => {        
         setCounter(counter + props.incremento)
@@ -14,13 +13,9 @@ const Counter = (props) => {
         setCounter(counter - 1)
     }
 
-    setTimeout(() => {
-        setContador("Este es tu contador de verdad de la buena")
-    }, 3000);
-
-     return (
+    return (
         <div>
-            <h2>{contador}</h2>
+            <h2>Mi contador</h2>
             <span>{counter}</span>
             <br />
             <button onClick={incrementar}>Incrementa!</button>
